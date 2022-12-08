@@ -1,4 +1,4 @@
-import { IsEqual } from 'zenbox-util/lodash'
+import { IsEqual } from 'libs/utils/lodash'
 
 export const containsInHierarchy = <T extends { parent?: T }>(isEqual: IsEqual<T>) => (source: T) => (target: T): boolean => {
   if (isEqual(source)(target)) return true
