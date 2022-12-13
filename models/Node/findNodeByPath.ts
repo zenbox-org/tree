@@ -1,5 +1,5 @@
-import { Node, separator } from '../Node'
 import { isEqual } from 'lodash-es'
+import { Node, separator } from '../Node'
 
 export function findNodeByPath(nodes: Node[], path: string) {
   const components = path.split(separator).map(c => c.trim())
