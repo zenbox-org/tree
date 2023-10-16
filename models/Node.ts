@@ -33,4 +33,8 @@ export function parseNodeUid(nodeUid: NodeUid): NodeUid {
   return NodeUidSchema.parse(nodeUid)
 }
 
+export function node(name: string, parent?: Node) {
+  return parseNode({ name, parent })
+}
+
 export const separator = '/'
