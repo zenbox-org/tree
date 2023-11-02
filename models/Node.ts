@@ -4,7 +4,7 @@ import { NameSchema } from '../../generic/models/Name'
 
 export interface Node {
   name: string
-  parent?: Node
+  parent?: Node | undefined
 }
 
 export const NodeSchema: z.ZodSchema<Node> = z.lazy(() => z.object({
